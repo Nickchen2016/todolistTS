@@ -6,3 +6,8 @@ type Todo = {  //the cool thing about change '.ts' to '.d.ts' is that its now a 
     text: string;
     complete: boolean;
 }
+
+
+type ToggleTodo = (selectedTodo: Todo) => void;
+
+type Addtodolist = (newtodo: Todo) => void;

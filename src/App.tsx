@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Todolistitem } from './todolistitem';
+
+const todos: Array<Todo> = [
+  {text: 'walk in', complete: true},
+  {text: 'walk out', complete: false}
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Todolistitem todo={todos[0]}/>;
 }
 
 export default App;
